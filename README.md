@@ -1,5 +1,5 @@
 # Series: How to create your own website based on Docker
-This repsitory contains all docker files that are being used in the following series on Project WebDev: http://project-webdev.blogspot.de/2015/05/create-site-based-on-docker-part1.html
+This repository contains all docker files that are being used in the following series on Project WebDev: http://project-webdev.blogspot.de/2015/05/create-site-based-on-docker-part1.html
 
 This series consists of several parts that you can read through in order to get a website based on Docker up and running:
 
