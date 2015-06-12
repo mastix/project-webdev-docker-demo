@@ -1,0 +1,37 @@
+ubuntubase:
+    build: ./ubuntu-base
+projectwebdev:
+    build: ./projectwebdev
+    expose:
+            - "8081"
+    volumes:
+        - ./logs/:/var/log/nginx/
+        - ./projectwebdev/html:/var/www/html:ro
+projectwebdevapi:
+    build: ./projectwebdev-api
+    expose:
+        - "3000"
+    links:
+        - mongodb:db
+    volumes:
+        - ./logs/:/var/log/pm2/
+        - ./projectwebdev-api/app:/var/www/html
+mongodb:
+    build: ./mongodb
+    expose:
+      - "3333"
+    volumes:
+        - ./logs/:/var/log/mongodb/
+        - ./mongodb/db:/data/db
+nginxreverseproxy:
+    build: ./nginx-reverse-proxy
+    expose:
+        - "80"
+        - "443"
+    links:
+        - projectwebdev:blog
+        - projectwebdevapi:blogapi
+    ports:
+        - "80:80"
+    volumes:
+        - ./logs/:/var/log/nginx/

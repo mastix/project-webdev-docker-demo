@@ -1,0 +1,18 @@
+
+  "name": "projectwebdevapi",
+  "version": "0.0.1",
+  "description": "REST API for project web dev",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://mastix@78.46.226.72:2211/opt/git/blog-api.git"
+  },
+  "author": "Sascha Sambale <mastixmc@gmail.com>",
+  "dependencies": {
+    "hapi": "^8.4.0",
+    "mongoose": "^4.0.3"
+  }
+}
