@@ -13,6 +13,6 @@ This series consists of several parts that you can read through in order to get 
 * [Part 8 - Creating the ioJS REST API Docker container](http://project-webdev.blogspot.de/2015/05/create-site-based-on-docker-part8-iojs-rest-api-docker-image.html)
 * [Part 9 - Creating the nginx web site Docker container](http://project-webdev.blogspot.de/2015/06/create-site-based-on-docker-part9-nginx-website-docker-image.html)
 * [Part 10 - Creating the nginx reverse proxy Docker container](http://project-webdev.blogspot.de/2015/06/create-site-based-on-docker-part10-nginx-reverse-proxy-docker-image.html)
-* [Part 11 - Run the whole application stack with Docker Compose]()
+* Part 11 - Run the whole application stack with Docker Compose
 
 Have fun with it! :)
